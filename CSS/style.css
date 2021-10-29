@@ -1,9 +1,6 @@
-body {/*-- Sets body defaults --*/
-  padding: .25rem;
-  font-size: 18px;
-  width: 98%;
-  margin: 0 auto;
-
+body {
+  padding: 0;
+  margin: 0;
 }
 
 nav {
@@ -34,5 +31,25 @@ nav a {
   margin: auto;
   max-width: 96%;
   height: 70%;
+  display: block;
+  margin-bottom: 25px;
 
+}
+
+.small-selections{
+  background-color: red;
+  height: 160px;
+  width: 96%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+}
+
+.slide{
+  width: 24.5%;
+  height: 100%;
+  background-color: purple;
 }
