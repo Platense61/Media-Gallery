@@ -1,6 +1,9 @@
-body {
-  padding: 0;
-  margin: 0;
+body {/*-- Sets body defaults --*/
+  padding: .25rem;
+  font-size: 18px;
+  width: 98%;
+  margin: 0 auto;
+
 }
 
 nav {
@@ -15,4 +18,21 @@ nav {
 nav a {
   color: #DDD;
   text-decoration: none;
+}
+
+.slideshow-wrap{
+  background-color: grey;
+  margin: auto;
+  margin-top: 5px;
+  max-width: 90%;
+  height: 750px;
+  padding-top: 30px;
+}
+
+.large-pic{
+  background-color: white;
+  margin: auto;
+  max-width: 96%;
+  height: 70%;
+
 }
