@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #222;
+  font-family: 'Kanit', sans-serif;
 }
 
 nav {
@@ -18,14 +19,32 @@ nav a {
   text-decoration: none;
 }
 
+/*slideshow stuff */
 .slideshow-wrap{
-  background-color: grey;
+  background-color: #EEE;
   margin: auto;
   margin-top: 5px;
   max-width: 90%;
   height: 750px;
   padding-top: 30px;
 }
+
+.mySlides {
+  display: none;
+}
+
+.fade img{
+  width: 100%;
+  height: 530px;
+}
+
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+}
+
 
 .large-pic{
   background-color: white;
@@ -65,8 +84,11 @@ nav a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
 
-
+.indicator img {
+  width: 100% !important; /*-- small images fill available space --*/
+  height: 170px;
 }
 
 .slide{
@@ -87,5 +109,31 @@ nav a {
 
 .grid-item{
   background-color: white;
-  height: 350px;
+  height: 400px;
+}
+
+.card-content {
+  padding: 0 .5em .7em .5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*-- vertically centers card content --*/
+}
+
+.card-text {
+  font-size: 1em;
+  line-height: 1.2;
+  align-self: flex-start;
+}
+
+footer{
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+#pokemon{
+  max-width: 100%;
+  height: auto;
+  display: table;
+  margin: 0 auto;
 }

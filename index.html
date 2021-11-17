@@ -14,6 +14,9 @@
   <!-- Materials icon link -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
 
 </head>
 
@@ -31,12 +34,33 @@
     <div class="slideshow-wrap">
 
       <div class="large-pic">
-        <button type="button" class="arrow-left">
+        <button type="button" class="arrow-left" onclick="plusSlides(-1)">
           <span class="material-icons">
             arrow_back
           </span>
         </button>
-        <button type="button" class="arrow-right">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="Assets\Lance.jpg" >
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="Assets\Surge.jpg" >
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="Assets\Giovanni.jpg" >
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="Assets\bruno.jpg" >
+        </div>
+
+        <button type="button" class="arrow-right" onclick="plusSlides(1)">
           <span class="material-icons">
             arrow_forward
           </span>
@@ -45,57 +69,135 @@
       </div>
       <div class="small-selections">
         <div class="slide 1">
-
+          <span class="indicator" onclick="currentSlide(1)"><img src="Assets\Lance.jpg"/></span>
         </div>
         <div class="slide 2">
-
+          <span class="indicator" onclick="currentSlide(2)"><img src="Assets\Surge.jpg"/></span>
         </div>
         <div class="slide 3">
-
+          <span class="indicator" onclick="currentSlide(3)"><img src="Assets\Giovanni.jpg"/></span>
         </div>
         <div class="slide 4">
-
+          <span class="indicator" onclick="currentSlide(4)"><img src="Assets\bruno.jpg"/></span>
         </div>
       </div>
     </div>
 
     <div class="grid-container">
       <div class="grid-item one">
-        <p>hi</p>
+        <img src="Assets\Bulbasaur.png" alt="" id="pokemon">
+        <hr>
+        <div class="card-content">
+          <h1>Bulbasaur</h1>
+          <p class="card-text"> There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger. </p>
+        </div>
       </div>
 
       <div class="grid-item two">
-        <p>they</p>
+        <img src="Assets\Ivysaur.png" alt="" id="pokemon">
+        <hr>
+        <div class="card-content">
+          <h1>Ivysaur</h1>
+          <p class="card-text">When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs. </p>
+        </div>
       </div>
 
       <div class="grid-item three">
-        <p>test</p>
+        <img src="Assets\Venusaur.png" alt="" id="pokemon">
+        <hr>
+        <div class="card-content">
+          <h1>Venusaur</h1>
+          <p class="card-text">Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight. </p>
+        </div>
       </div>
 
       <div class="grid-item four">
-        <p>ahha</p>
+        <img src="Assets\Arbok.png" alt="" id="pokemon">
+        <hr>
+        <div class="card-content">
+          <h1>Arbok</h1>
+          <p class="card-text">The frightening patterns on its belly have been studied. Six variations have been confirmed. </p>
+        </div>
       </div>
 
       <div class="grid-item five">
-        <p>yessir</p>
+        <img src="Assets\Squirtle.png" alt="" id="pokemon">
+        <hr>
+        <div class="card-content">
+          <h1>Squirtle</h1>
+          <p class="card-text"> When it retracts its long neck into its shell, it squirts out water with vigorous force. </p>
+        </div>
       </div>
 
       <div class="grid-item six">
-
+        <img src="Assets\Wartortle.png" alt="" id="pokemon">
+        <hr>
+        <div class="card-content">
+          <h1>Wartortle</h1>
+          <p class="card-text"> It is recognized as a symbol of longevity. If its shell has algae on it, that Wartortle is very old.</p>
+        </div>
       </div>
 
       <div class="grid-item seven">
-
+        <img src="Assets\Blastoise.png" alt="" id="pokemon">
+        <hr>
+        <div class="card-content">
+          <h1>Blastoise</h1>
+          <p class="card-text">It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell.</p>
+        </div>
       </div>
 
       <div class="grid-item eight">
-
+        <img src="Assets\Gyrados.png" alt="" id="pokemon">
+        <hr>
+        <div class="card-content">
+          <h1>Gyrados</h1>
+          <p class="card- text">It has an extremely aggressive nature. The Hyper Beam it shoots from its mouth totally incinerates all targets. </p>
+        </div>
       </div>
 
       <div class="grid-item nine">
+        <img src="Assets\Charmander.png" alt="" id="pokemon">
+        <hr>
+          <div class="card-content">
 
+
+          <h1>Charmander</h1>
+          <p class="card-text">It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail. </p>
+        </div>
+      </div>
+
+      <div class="grid-item ten">
+        <img src="Assets\Charmeleon.png" alt="" id="pokemon">
+        <hr>
+        <div class="card-content">
+          <h1>Charmelon</h1>
+          <p class="card-text"> It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws. </p>
+        </div>
+      </div>
+
+      <div class="grid-item eleven">
+        <img src="Assets\Charizard.png" alt="" id="pokemon">
+        <hr>
+        <div class="card-content">
+          <h1>Charizard</h1>
+          <p class="card-text"> It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames. </p>
+        </div>
+      </div>
+
+      <div class="grid-item twelve">
+        <img src="Assets\Arcanine.png" alt="" id="pokemon">
+        <hr>
+        <div class="card-content">
+          <h1>Arcanine</h1>
+          <p class="card-text">The sight of it running over 6,200 miles in a single day and night has captivated many people. </p>
+        </div>
       </div>
     </div>
+
+    <footer>
+      <p>@ 2021 Remy Canales-Vaschy</p>
+    </footer>
 
 
     <script src="JS/page.js"></script>
