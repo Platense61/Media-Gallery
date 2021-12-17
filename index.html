@@ -22,13 +22,20 @@
 
   <body>
     <!-- navigation bar -->
-    <nav class="topnav" id="main-nav">
-      <a href="#" class="nav-links">Home</a>
-      <a href="#" class="nav-links">About</a>
-      <a href="#" class="nav-links">Menu</a>
-      <a href="#" class="nav-links">Pictures</a>
-      <a href="#" class="nav-links">Source</a>
-      <a href="javascript:void(0);" class="nav-link trigram" onclick="navToggle()">&#9776;</a>
+    <nav id="main-nav" class="topnav">
+      <a class="nav-item logo">
+        <span class="label"><i class="fas fa-home"></i>Home</span>
+      </a>
+      <a class="nav-item">
+        <span class="label"><i class="fas fa-file-upload"></i>About</span>
+      </a>
+      <a class="nav-item">
+        <span class="label"><i class="fas fa-info-circle"></i>Gen 1 Pokemon</span>
+      </a>
+      <a class="nav-item">
+        <span class="label"><i class="fas fa-quote-left"></i>Credits</span>
+      </a>
+      <a href="javascript:void(0);" class="nav-item trigram" onclick="navToggle()">&#9776;</a>
     </nav>
 
     <div class="slideshow-wrap">
@@ -88,72 +95,159 @@
         <img src="Assets\Bulbasaur.png" alt="" id="pokemon">
         <hr>
         <div class="card-content">
-          <h1>Bulbasaur</h1>
+          <h1 class="card-title">Bulbasaur</h1>
           <p class="card-text"> There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger. </p>
+          <button data-modal="#09" class="card-more button" onclick="showModal('modal1')">View</button>
         </div>
+      </div>
+      <div id="modal1" class="modal">
+
+        <!-- First Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="hideModal('modal1')">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+
       </div>
 
       <div class="grid-item two">
         <img src="Assets\Ivysaur.png" alt="" id="pokemon">
         <hr>
         <div class="card-content">
-          <h1>Ivysaur</h1>
+          <h1 class="card-title">Ivysaur</h1>
           <p class="card-text">When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs. </p>
+          <button data-modal="#09" class="card-more button" onclick="showModal('modal2')">View</button>
         </div>
+      </div>
+
+      <div id="modal2" class="modal">
+
+        <!-- Second Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="hideModal('modal2')">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+
       </div>
 
       <div class="grid-item three">
         <img src="Assets\Venusaur.png" alt="" id="pokemon">
         <hr>
         <div class="card-content">
-          <h1>Venusaur</h1>
+          <h1 class="card-title">Venusaur</h1>
           <p class="card-text">Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight. </p>
+          <button data-modal="#09" class="card-more button" onclick="showModal('modal3')">View</button>
         </div>
+      </div>
+
+      <div id="modal3" class="modal">
+
+        <!-- Third Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="hideModal('modal3')">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+
       </div>
 
       <div class="grid-item four">
         <img src="Assets\Arbok.png" alt="" id="pokemon">
         <hr>
         <div class="card-content">
-          <h1>Arbok</h1>
+          <h1 class="card-title">Arbok</h1>
           <p class="card-text">The frightening patterns on its belly have been studied. Six variations have been confirmed. </p>
+          <button data-modal="#09" class="card-more button" onclick="showModal('modal4')">View</button>
         </div>
+      </div>
+
+      <div id="modal4" class="modal">
+
+        <!-- Fourth Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="hideModal('modal4')">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+
       </div>
 
       <div class="grid-item five">
         <img src="Assets\Squirtle.png" alt="" id="pokemon">
         <hr>
         <div class="card-content">
-          <h1>Squirtle</h1>
+          <h1 class="card-title">Squirtle</h1>
           <p class="card-text"> When it retracts its long neck into its shell, it squirts out water with vigorous force. </p>
+          <button data-modal="#09" class="card-more button" onclick="showModal('modal5')">View</button>
         </div>
+      </div>
+
+      <div id="modal5" class="modal">
+
+        <!-- Fith Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="hideModal('modal5')">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+
       </div>
 
       <div class="grid-item six">
         <img src="Assets\Wartortle.png" alt="" id="pokemon">
         <hr>
         <div class="card-content">
-          <h1>Wartortle</h1>
+          <h1 class="card-title">Wartortle</h1>
           <p class="card-text"> It is recognized as a symbol of longevity. If its shell has algae on it, that Wartortle is very old.</p>
+          <button data-modal="#09" class="card-more button" onclick="showModal('modal6')">View</button>
         </div>
+      </div>
+
+      <div id="modal6" class="modal">
+
+        <!-- Sixth Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="hideModal('modal6')">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+
       </div>
 
       <div class="grid-item seven">
         <img src="Assets\Blastoise.png" alt="" id="pokemon">
         <hr>
         <div class="card-content">
-          <h1>Blastoise</h1>
+          <h1 class="card-title">Blastoise</h1>
           <p class="card-text">It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell.</p>
+          <button data-modal="#09" class="card-more button" onclick="showModal('modal2')">View</button>
         </div>
+      </div>
+
+      <div id="modal7" class="modal">
+
+        <!-- Seventh Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="hideModal('modal7')">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+
       </div>
 
       <div class="grid-item eight">
         <img src="Assets\Gyrados.png" alt="" id="pokemon">
         <hr>
         <div class="card-content">
-          <h1>Gyrados</h1>
+          <h1 class="card-title">Gyrados</h1>
           <p class="card- text">It has an extremely aggressive nature. The Hyper Beam it shoots from its mouth totally incinerates all targets. </p>
+          <button data-modal="#09" class="card-more button" onclick="showModal('modal8')">View</button>
         </div>
+      </div>
+
+      <div id="modal8" class="modal">
+
+        <!-- Eighth Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="hideModal('modal8')">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+
       </div>
 
       <div class="grid-item nine">
@@ -162,37 +256,81 @@
           <div class="card-content">
 
 
-          <h1>Charmander</h1>
+          <h1 class="card-title">Charmander</h1>
           <p class="card-text">It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail. </p>
+          <button data-modal="#09" class="card-more button" onclick="showModal('modal9')">View</button>
         </div>
+      </div>
+
+      <div id="modal9" class="modal">
+
+        <!-- Ninth Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="hideModal('modal9')">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+
       </div>
 
       <div class="grid-item ten">
         <img src="Assets\Charmeleon.png" alt="" id="pokemon">
         <hr>
         <div class="card-content">
-          <h1>Charmelon</h1>
+          <h1 class="card-title">Charmelon</h1>
           <p class="card-text"> It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws. </p>
+          <button data-modal="#09" class="card-more button" onclick="showModal('modal10')">View</button>
         </div>
+      </div>
+
+      <div id="modal10" class="modal">
+
+        <!-- Tenth Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="hideModal('modal10')">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+
       </div>
 
       <div class="grid-item eleven">
         <img src="Assets\Charizard.png" alt="" id="pokemon">
         <hr>
         <div class="card-content">
-          <h1>Charizard</h1>
+          <h1 class="card-title">Charizard</h1>
           <p class="card-text"> It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames. </p>
+          <button data-modal="#09" class="card-more button" onclick="showModal('modal11')">View</button>
         </div>
+      </div>
+
+      <div id="modal11" class="modal">
+
+        <!-- Eleventh Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="hideModal('modal11')">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+
       </div>
 
       <div class="grid-item twelve">
         <img src="Assets\Arcanine.png" alt="" id="pokemon">
         <hr>
         <div class="card-content">
-          <h1>Arcanine</h1>
+          <h1 class="card-title">Arcanine</h1>
           <p class="card-text">The sight of it running over 6,200 miles in a single day and night has captivated many people. </p>
+          <button data-modal="#09" class="card-more button" onclick="showModal('modal12')">View</button>
         </div>
       </div>
+    </div>
+
+    <div id="modal12" class="modal">
+
+      <!-- 12 Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModal('modal12')">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+
     </div>
 
     <footer>
